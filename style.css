@@ -124,3 +124,9 @@ li {
     font-size: 14px;
     color: hsl(179, 62%, 85%);
 }
+
+@media(max-width: 450px) {
+    #bottom {
+        flex-direction: column;
+    }
+}
