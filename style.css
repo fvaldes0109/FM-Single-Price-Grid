@@ -14,11 +14,16 @@ h1, h2, h3, p, span, button, li {
 
 body {
     background-color: hsl(204, 43%, 93%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 main {
     background-color: white;
-    margin: 80px auto 30px;
+    margin: 10px;
     width: 95%;
     max-width: 580px;
     border-radius: 10px;
@@ -109,6 +114,7 @@ button {
 
 button:hover {
     background-color: hsl(71, 73%, 60%);
+    cursor: pointer;
 }
 
 button:active {
