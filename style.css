@@ -8,7 +8,7 @@
     src: url('./fonts/Karla/Karla-VariableFont_wght.ttf');
 }
 
-h1, h2, h3, p, span, button, li {
+h1, h2, p, span, button, li {
     font-family: Karla;
 }
 
@@ -32,7 +32,7 @@ main {
 }
 
 
-#top {
+header {
     padding: 40px;
 }
 
@@ -42,54 +42,55 @@ h1 {
     color: hsl(179, 62%, 43%);
 }
 
-h2 {
+.guarantee {
     font-size: 18px;
     margin: 20px 0 10px;
     color: hsl(71, 73%, 54%);
+    font-weight: 700;
 }
 
-#top p {
+.description {
     color: hsl(218, 22%, 67%);
     line-height: 1.4;
     font-size: 15px;
 }
 
-#bottom {
+section {
     display: flex;
 }
 
-section, aside {
+.left, .right {
     padding: 30px;
 }
 
-section {
+.left {
     flex: 1;
     background-color: hsl(179, 62%, 43%);
 }
 
-aside {
+.right {
     flex: 1;
     background-color: #4ABEBD;
 }
 
-#bottom h3, p, span, button, li {
+section h2, p, span, button, li {
     color: white;
 }
 
-h3 {
+h2 {
     font-size: 16px;
 }
 
-#price {
+.price {
     margin: 15px 0 5px;
 }
 
-#price-num {
+.price-num {
     font-size: 25px;
     font-weight: 700;
 }
 
-#price-time {
+.price-time {
     font-size: 14px;
     margin: 0 5px;
     position: relative;
@@ -97,7 +98,7 @@ h3 {
     color: hsl(179, 62%, 70%);
 }
 
-section p {
+.left p {
     font-size: 15px;
 }
 
@@ -132,7 +133,7 @@ li {
 }
 
 @media(max-width: 450px) {
-    #bottom {
+    section {
         flex-direction: column;
     }
 }
